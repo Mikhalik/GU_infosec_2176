@@ -3,7 +3,7 @@
 # Используйте форматирование строк.
 
 seconds = int (input("Введите время в секундах: "))
-hour = seconds // 360
+hour = seconds // 3600
 minute = (seconds - (hour * 360)) // 60
 second = seconds - (hour * 360) - (minute * 60)
 print(f'Это будет - {hour}ч:{minute}м:{second}с')
