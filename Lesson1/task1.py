@@ -16,4 +16,4 @@ count = number + zero
 # затем выведим ответы на экран.
 day_of_week = input("Какой сегодня день недели? ")
 year = input("Какой сейчас год? ")
-print("Сегодня", day_of_week,"; ", year, "год")
+print(f'Сегодня{day_of_week}{year}год')
