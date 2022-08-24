@@ -27,14 +27,14 @@ with open('task7.txt', 'r') as my_file:
         profit = int(line[2]) - int(line[3])
         if profit > 0:
             print(f'Выручка: {profit}\n')
-            summa = summa + profit
+            total = total + profit
             n = n + 1
             profit_dict[line[0]] = profit
         else:
             print(f'Убыток: {profit}\n')
             profit_dict[line[0]] = profit
-    print(f'Средняя выручка фирм: {summa / n}\n')
-    average_dict['average_profit'] = summa / n
+    print(f'Средняя выручка фирм: {total / n}\n')
+    average_dict['average_profit'] = total / n
     my_list = [profit_dict, average_dict]
     print(my_list)
 with open('profit.json','w') as j_file:
