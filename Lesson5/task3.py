@@ -7,7 +7,7 @@
 Петров 13749.32
 '''
 count = 0
-summa = 0
+total = 0
 my_file = open('task3.txt', 'r')
 my_string = my_file.readlines()
 print(f'Сотруники у которых оклад менее 20 тысяч:')
@@ -16,6 +16,6 @@ for line in my_string:
     if float(line[1]) < 20000:
          print((' '.join(line)).rstrip())
     count = count + 1
-    summa = summa + float(line[1])
+    total = total + float(line[1])
 print(f'Средняя величина доходов сотрудников -  {"%.2f" % (summa / count)}')
 my_file.close()
