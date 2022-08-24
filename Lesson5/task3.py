@@ -8,7 +8,7 @@
 '''
 count = 0
 total = 0
-my_file = open('task3.txt', 'r')
+my_file = open('task3.txt', 'r', encoding = 'utf-8')
 my_string = my_file.readlines()
 print(f'Сотруники у которых оклад менее 20 тысяч:')
 for line in my_string:
