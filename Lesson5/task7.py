@@ -16,7 +16,7 @@
 '''
 import json
 
-summa = 0
+total = 0
 n = 0
 profit_dict = {}
 average_dict = {}
