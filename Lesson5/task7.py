@@ -20,7 +20,7 @@ total = 0
 n = 0
 profit_dict = {}
 average_dict = {}
-with open('task7.txt', 'r') as my_file:
+with open('task7.txt', 'r', encoding='utf-8') as my_file:
     for line in my_file:
         print(line.rstrip())
         line = line.split(' ')
@@ -37,6 +37,6 @@ with open('task7.txt', 'r') as my_file:
     average_dict['average_profit'] = total / n
     my_list = [profit_dict, average_dict]
     print(my_list)
-with open('profit.json','w') as j_file:
+with open('profit.json', 'w', encoding='utf-8') as j_file:
     json.dump(my_list, j_file, ensure_ascii=False, indent=4)
 print(f'\n Файл profit.json сохранен')
