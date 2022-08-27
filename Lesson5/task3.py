@@ -17,5 +17,5 @@ for line in my_string:
          print((' '.join(line)).rstrip())
     count = count + 1
     total = total + float(line[1])
-print(f'Средняя величина доходов сотрудников -  {"%.2f" % (summa / count)}')
+print(f'Средняя величина доходов сотрудников -  {"%.2f" % (total / count)}')
 my_file.close()

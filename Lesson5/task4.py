@@ -10,7 +10,7 @@ Four — 4
 '''
 my_dict = {'One': 'Один', 'Two': 'Два', 'Three': 'Три', 'Four': 'Четыре'}
 new_file = open('new_task4.txt', 'w', encoding = 'utf-8')
-my_file = open('task4.txt', 'r')
+my_file = open('task4.txt', 'r', encoding = 'utf-8')
 text = my_file.read()
 print(f'Исходный текст:\n{text}')
 my_file.seek(0)

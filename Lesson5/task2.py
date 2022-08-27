@@ -3,7 +3,7 @@
    выполнить подсчёт строк и слов в каждой строке.
 '''
 # В задаче использовал различные методы подсчета строк и слов.
-file = open('task2.txt', 'r')
+file = open('task2.txt', 'r', encoding = 'utf-8')
 text = file.read()
 strings = len(text.split('\n'))
 words = len(text.split())
@@ -12,7 +12,7 @@ print(text, '\n')
 print('Файл содержит:')
 print(f'строк - {strings}, слов - {words}, символов - {symbols}')
 file.close()
-file = open('task2.txt', 'r')
+file = open('task2.txt', 'r', encoding = 'utf-8')
 wordsn = 0
 lines = 0
 for line in file:

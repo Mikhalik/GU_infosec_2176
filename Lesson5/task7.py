@@ -17,10 +17,10 @@
 import json
 
 total = 0
-n = 0
+count = 0
 profit_dict = {}
 average_dict = {}
-with open('task7.txt', 'r', encoding='utf-8') as my_file:
+with open('task7.txt', 'r', encoding = 'utf-8') as my_file:
     for line in my_file:
         print(line.rstrip())
         line = line.split(' ')
@@ -28,15 +28,15 @@ with open('task7.txt', 'r', encoding='utf-8') as my_file:
         if profit > 0:
             print(f'Выручка: {profit}\n')
             total = total + profit
-            n = n + 1
+            count = count + 1
             profit_dict[line[0]] = profit
         else:
             print(f'Убыток: {profit}\n')
             profit_dict[line[0]] = profit
-    print(f'Средняя выручка фирм: {total / n}\n')
-    average_dict['average_profit'] = total / n
+    print(f'Средняя выручка фирм: {total / count}\n')
+    average_dict['average_profit'] = total / count
     my_list = [profit_dict, average_dict]
     print(my_list)
-with open('profit.json', 'w', encoding='utf-8') as j_file:
+with open('profit.json','w') as j_file:
     json.dump(my_list, j_file, ensure_ascii=False, indent=4)
 print(f'\n Файл profit.json сохранен')
